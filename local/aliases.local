@@ -1,0 +1,66 @@
+#!/usr/bin/env zsh
+
+## root privileges
+alias doas="doas --"
+
+## vim and emacs
+alias vi=vim
+alias em="/usr/bin/emacs -nw"
+alias emacs="emacsclient -c -a 'emacs'"
+
+## doomemacs
+alias doomsync="~/.emacs.d/bin/doom sync"
+alias doomdoctor="~/.emacs.d/bin/doom doctor"
+alias doomupgrade="~/.emacs.d/bin/doom upgrade"
+alias doompurge="~/.emacs.d/bin/doom purge"
+
+## add color to grep(s)
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## confirm before overwriting something
+alias cp="cp -i"
+alias mv='mv -i'
+alias rm='rm -i'
+
+# alias "l" to exa with icons
+alias l='exa -lah --git --icons'
+
+## cp/mv with progress bar
+alias cpg="cpg -g"
+alias mvg="mvg -g"
+
+## human-readable sizes
+alias free='free -h'
+alias df='df -h'
+alias du='du -h'
+
+## xdg
+alias open='xdg-open'
+
+## Terminals' command
+if [ -f `which kitty` ]; then
+  ## show img in terminal
+  alias icat="kitty +kitten icat"
+
+  ## connect via ssh
+  alias issh="kitty +kitten ssh"
+fi
+
+# youtube-dl
+alias yta-aac="youtube-dl --extract-audio --audio-format aac "
+alias yta-best="youtube-dl --extract-audio --audio-format best "
+alias yta-flac="youtube-dl --extract-audio --audio-format flac "
+alias yta-m4a="youtube-dl --extract-audio --audio-format m4a "
+alias yta-mp3="youtube-dl --extract-audio --audio-format mp3 "
+alias yta-opus="youtube-dl --extract-audio --audio-format opus "
+alias yta-vorbis="youtube-dl --extract-audio --audio-format vorbis "
+alias yta-wav="youtube-dl --extract-audio --audio-format wav "
+alias ytv-best="youtube-dl -f bestvideo+bestaudio "
+
+# switch between shells
+alias tobash="sudo chsh $USER -s /bin/bash && echo 'Now log out.'"
+alias tozsh="sudo chsh $USER -s /bin/zsh && echo 'Now log out.'"
+alias tofish="sudo chsh $USER -s /bin/fish && echo 'Now log out.'"
+

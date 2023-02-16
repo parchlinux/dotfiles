@@ -1,5 +1,9 @@
-thoughtbot dotfiles
+Dotfiles
 ===================
+
+> A part of these dotfiles is based on the dotfiles of the **[Thoughtbot]** organization and we made changes to it. Thanks to the **[Thoughtbot]** organization.
+
+[Thoughtbot]: https://github.com/Thoughtbot
 
 ![prompt](http://images.thoughtbot.com/thoughtbot-dotfiles-prompt.png)
 
@@ -15,7 +19,7 @@ Install
 
 Clone onto your laptop:
 
-    git clone git@github.com:thoughtbot/dotfiles.git ~/dotfiles
+    git clone git@github.com:parchlinux/dotfiles.git ~/dotfiles
 
 (Or, [fork and keep your fork
 updated](http://robots.thoughtbot.com/keeping-a-github-fork-updated)).
@@ -31,13 +35,13 @@ Install the dotfiles:
 After the initial installation, you can run `rcup` without the one-time variable
 `RCRC` being set (`rcup` will symlink the repo's `rcrc` to `~/.rcrc` for future
 runs of `rcup`). [See
-example](https://github.com/thoughtbot/dotfiles/blob/master/rcrc).
+example](https://github.com/parchlinux/dotfiles/blob/master/rcrc).
 
 This command will create symlinks for config files in your home directory.
 Setting the `RCRC` environment variable tells `rcup` to use standard
 configuration options:
 
-* Exclude the `README.md`, `README-ES.md` and `LICENSE` files, which are part of
+* Exclude the `README.md` and `LICENSE` files, which are part of
   the `dotfiles` repository but do not need to be symlinked in.
 * Give precedence to personal overrides which by default are placed in
   `~/dotfiles-local`
@@ -66,6 +70,7 @@ Create a directory for your personal customizations:
 Put your customizations in `~/dotfiles-local` appended with `.local`:
 
 * `~/dotfiles-local/aliases.local`
+* `~/dotfiles-local/functions.local`
 * `~/dotfiles-local/git_template.local/*`
 * `~/dotfiles-local/gitconfig.local`
 * `~/dotfiles-local/psqlrc.local` (we supply a blank `.psqlrc.local` to prevent `psql` from
@@ -245,18 +250,3 @@ dotfiles is copyright © 2009-2018 thoughtbot. It is free software, and may be
 redistributed under the terms specified in the [`LICENSE`] file.
 
 [`LICENSE`]: /LICENSE
-
-About thoughtbot
-----------------
-
-![thoughtbot](http://presskit.thoughtbot.com/images/thoughtbot-logo-for-readmes.svg)
-
-dotfiles is maintained and funded by thoughtbot, inc.
-The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-We love open source software!
-See [our other projects][community].
-We are [available for hire][hire].
-
-[community]: https://thoughtbot.com/community?utm_source=github
-[hire]: https://thoughtbot.com/hire-us?utm_source=github

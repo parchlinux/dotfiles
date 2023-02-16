@@ -1,7 +1,37 @@
-# load custom executable functions
-for function in ~/.zsh/functions/*; do
-  source $function
-done
+#!/usr/bin/env zsh
+
+ZSH_PATH=$HOME/.zsh
+
+#########################
+######### PATH ##########
+#########################
+
+if [ -d "$HOME/.bin" ] ;
+  then PATH="$HOME/.bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ;
+  then PATH="$HOME/.local/bin:$PATH"
+fi
+
+if [ -d "$HOME/Applications" ] ;
+  then PATH="$HOME/Applications:$PATH"
+fi
+
+if [ -d "$HOME/.cargo/bin" ]
+  then PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+
+# Comment this line out to enable default emacs-like bindings
+bindkey -v
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# functions
+[[ -f "$ZSH_PATH/functions.zsh" ]] && source $ZSH_PATH/functions.zsh
+
 
 # extra files in ~/.zsh/configs/pre , ~/.zsh/configs , and ~/.zsh/configs/post
 # these are loaded first, second, and third, respectively.
@@ -32,10 +62,10 @@ _load_settings() {
     fi
   fi
 }
-_load_settings "$HOME/.zsh/configs"
+_load_settings "$ZSH_PATH/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
 # aliases
-[[ -f ~/.aliases ]] && source ~/.aliases
+[[ -f "$ZSH_PATH/aliases.zsh" ]] && source "$ZSH_PATH/aliases.zsh"
