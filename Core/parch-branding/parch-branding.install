@@ -1,0 +1,15 @@
+post_install() {
+	mv -f etc/os-release_parch etc/os-release
+	mv -f usr/lib/os-release_parch usr/lib/os-release
+	mv -f etc/issue_parch etc/issue
+	mv -f etc/lsb-release_parch etc/lsb-release
+	        
+	if [ -f /etc/default/grub ]; then
+		sed -i s/GRUB_DISTRIBUTOR=\"Arch\"/GRUB_DISTRIBUTOR=\"Parch\"/g etc/default/grub
+		grub-mkconfig -o /boot/grub/grub.cfg
+	fi
+}
+
+post_upgrade() {
+	post_install
+}

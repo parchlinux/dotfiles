@@ -1,0 +1,28 @@
+# Maintainer: Bss Foundation
+
+pkgname=parch-branding
+_pkgname=branding
+pkgver=2023.11.22
+pkgrel=0
+pkgdesc='parch Linux branding'
+arch=('any')
+url="https://parchlinux.ir"
+license=('GPL3')
+depends=('lsb-release')
+install="${pkgname}.install"
+source=("parch.tar.gz"
+	"os-release_parch"
+	"issue_parch"
+	"lsb-release_parch")
+sha256sums=('114ca6cde2d8b6e8e9cd19261d357d1ba958bc0c48798749221e248d8b8e0602'
+    '55c15f4a76fca4397413460c7df7424e651ca6acc42719766ce777ad7fa64c4a'
+    'f33b9a6044e10ee8c82505d9edfbc8d2b097d31d68800f94d701c6650c4d3f6c'
+    '25d98bad4f3bb30e30210ea9693e7bb80de4bce0fae37cbb3f2435bad023876e')
+
+package () {
+    install -Dm 644 logos/parch-logo.svg "${pkgdir}/usr/share/pixmaps/parch-logo.svg"
+    install -Dm 644 ../os-release_parch "${pkgdir}/etc/os-release_parch"
+    install -Dm 644 ../os-release_parch "${pkgdir}/usr/lib/os-release_parch"
+    install -Dm 644 ../issue_parch "${pkgdir}/etc/issue_parch"
+    install -Dm 644 ../lsb-release_parch "${pkgdir}/etc/lsb-release_parch"
+}
