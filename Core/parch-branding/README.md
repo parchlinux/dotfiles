@@ -21,5 +21,5 @@ makepkg -sc
 
 ### TODO
 
-- [] Switch to GIT
-- [] Add a valid support Link (for example forum)
+- [ ] Switch to GIT
+- [ ] Add a valid support Link (for example forum)
