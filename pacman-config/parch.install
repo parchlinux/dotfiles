@@ -1,0 +1,14 @@
+post_install() {
+
+	cp  etc/pacman.conf.parch etc/pacman.conf
+	cp etc/pacman.d/mirrorlist.parch etc/pacman.d/mirrorlist
+	cp etc/pacman.d/pcp-mirrorlist.parch etc/pacman.d/pcp-mirrorlist
+	cp etc/pacman.d/ppr-mirrorlist.parch etc/pacman.d/ppr-mirrorlist
+	cp etc/pacman.d/ptr-mirrorlist.parch etc/pacman.d/ptr-mirrorlist
+	rm /etc/pacman.d/*.parch
+	rm /etc/pacman.conf.parch
+}
+
+post_upgrade() {
+	post_install
+}

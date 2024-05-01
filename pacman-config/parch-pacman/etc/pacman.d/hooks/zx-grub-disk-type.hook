@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = grub
+[Action]
+Description = Reinstall GRUB
+When = PostTransaction
+Exec = /bin/bash -c '/etc/pacman.d/hooks/zx-grub-disk-type.sh'
+

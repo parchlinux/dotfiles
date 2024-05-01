@@ -1,0 +1,12 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = linux
+Target = linux-*
+Target = systemd
+Target = grub
+[Action]
+Description = Generate GRUB configuration
+When = PostTransaction
+Exec = /bin/bash -c '/etc/pacman.d/hooks/zxe-grub-linux.sh'
