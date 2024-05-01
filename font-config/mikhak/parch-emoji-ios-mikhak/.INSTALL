@@ -1,0 +1,8 @@
+post_install() {
+	cp  /usr/share/fonts/noto/NotoColorEmoji.ttf.parch /usr/share/fonts/noto/NotoColorEmoji.ttf
+  fc-cache
+}
+
+post_upgrade() {
+	post_install
+}

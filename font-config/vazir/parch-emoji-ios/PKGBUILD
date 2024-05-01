@@ -1,0 +1,21 @@
+#Maintainer: ParchLinux
+pkgname=parch-emoji-ios
+destname="/"
+pkgver=4
+pkgrel=5
+pkgdesc="emoji config for parchlinux"
+arch=('any')
+url="https://github.com/parchlinux"
+license=('GPL3')
+makedepends=('git')
+conflicts=()
+depends=('vazir-code-fonts' 'vazirmatn-fonts' 'ttf-apple-emoji' 'opendesktop-fonts' 'ttf-baekmuk')
+provides=("${pkgname}")
+options=(!strip !emptydirs)
+install=parch.install
+source=("file.zip")
+sha256sums=('SKIP')
+package() {
+	install -dm755 ${pkgdir}${destname}
+	cp -r ${srcdir}/${pkgname}${destname}/* ${pkgdir}${destname}
+}
