@@ -1,0 +1,88 @@
+discover_other_daemon: 1discover_other_daemon: 1discover_other_daemon: 1[cinnamon-settings-daemon-smartcard] Failed to start: no suitable smartcard driver could be found
+[cinnamon-settings-daemon-smartcard] Failed to start: no suitable smartcard driver could be found
+
+** (csd-color:510): WARNING **: 04:56:01.338: failed to get edid: unable to get EDID for output
+
+** (csd-color:510): WARNING **: 04:56:01.376: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+
+** (csd-color:510): WARNING **: 04:56:10.484: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+
+** (csd-color:510): WARNING **: 04:56:10.486: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+
+(cinnamon:636): mutter-WARNING **: 04:56:10.487: Property 'libinput Accel Profile Enabled Default' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+
+** (csd-color:510): WARNING **: 04:56:10.488: unable to get EDID for xrandr-Virtual-1: unable to get EDID for output
+
+(cinnamon:636): mutter-WARNING **: 04:56:10.491: Property 'libinput Accel Profiles Available' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+
+(cinnamon:636): mutter-WARNING **: 04:56:10.491: Property 'libinput Accel Profile Enabled' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+
+(cinnamon:636): mutter-WARNING **: 04:56:10.574: Property 'libinput Accel Profile Enabled Default' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+
+(cinnamon:636): mutter-WARNING **: 04:56:10.574: Property 'libinput Accel Profiles Available' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+Gjs-Message: 04:56:12.303: JS LOG: About to start Cinnamon
+Gjs-Message: 04:56:13.017: JS LOG: [LookingGlass/info] Cinnamon.AppSystem.get_default() started in 709 ms
+Gjs-Message: 04:56:13.040: JS LOG: [LookingGlass/info] loading user theme: /usr/share/themes/Arc-Dark/cinnamon/cinnamon.css
+Gjs-Message: 04:56:13.102: JS LOG: [LookingGlass/info] added icon directory: /usr/share/themes/Arc-Dark/cinnamon
+Gjs-Message: 04:56:13.126: JS LOG: [LookingGlass/info] GesturesManager: Looking for devices.
+Gjs-Message: 04:56:13.708: JS LOG: [LookingGlass/info] loaded at Fri Sep 29 2023 04:56:13 GMT-0400 (Eastern Daylight Time)
+Gjs-Message: 04:56:13.709: JS LOG: Cinnamon started at Fri Sep 29 2023 04:56:13 GMT-0400 (Eastern Daylight Time)
+Gjs-Message: 04:56:13.770: JS LOG: [LookingGlass/info] ExtensionSystem started in 1 ms
+Gjs-Message: 04:56:13.771: JS LOG: [LookingGlass/info] DeskletManager started in 1 ms
+Gjs-Message: 04:56:13.771: JS LOG: [LookingGlass/info] SearchProviderManager started in 1 ms
+
+(cinnamon:636): mutter-WARNING **: 04:56:13.809: Property 'libinput Accel Profile Enabled Default' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+
+(cinnamon:636): mutter-WARNING **: 04:56:13.809: Property 'libinput Accel Profiles Available' for device 'ImExPS/2 Generic Explorer Mouse' returned 3 items, expected 2
+Gjs-Message: 04:56:13.946: JS LOG: [LookingGlass/info] GesturesManager: No devices.
+vmware-user: could not open /proc/fs/vmblock/dev
+** Message: 04:56:16.732: nemo-desktop: session is cinnamon, establishing proxy
+Gjs-Message: 04:56:17.626: JS LOG: [LookingGlass/info] Role locked: notifications
+Gjs-Message: 04:56:18.148: JS LOG: [LookingGlass/info] Loaded applet notifications@cinnamon.org in 4126 ms
+Gjs-Message: 04:56:18.150: JS LOG: Enabling WindowAttentionHandler
+Gjs-Message: 04:56:18.271: JS LOG: [LookingGlass/info] Loaded applet favorites@cinnamon.org in 123 ms
+Gjs-Message: 04:56:18.293: JS LOG: [LookingGlass/info] Loaded applet removable-drives@cinnamon.org in 22 ms
+Gjs-Message: 04:56:18.512: JS LOG: [LookingGlass/info] Loaded applet printers@cinnamon.org in 219 ms
+Gjs-Message: 04:56:18.604: JS LOG: [LookingGlass/info] Loaded applet keyboard@cinnamon.org in 92 ms
+Gjs-Message: 04:56:18.612: JS LOG: [LookingGlass/info] Role locked: tray
+Gjs-Message: 04:56:18.617: JS LOG: [LookingGlass/info] Loaded applet systray@cinnamon.org in 13 ms
+Gjs-Message: 04:56:19.026: JS LOG: [LookingGlass/info] Loaded applet cornerbar@cinnamon.org in 409 ms
+Gjs-Message: 04:56:19.123: JS LOG: [LookingGlass/info] Loaded applet calendar@cinnamon.org in 97 ms
+Gjs-Message: 04:56:19.135: JS LOG: [LookingGlass/info] Loaded applet xapp-status@cinnamon.org in 11 ms
+Gjs-Message: 04:56:19.172: JS LOG: [LookingGlass/info] Loaded applet power@cinnamon.org in 37 ms
+Gjs-Message: 04:56:19.390: JS LOG: [LookingGlass/info] Role locked: panellauncher
+Gjs-Message: 04:56:19.390: JS LOG: [LookingGlass/info] Role locked: windowattentionhandler
+Gjs-Message: 04:56:19.394: JS LOG: [LookingGlass/info] Loaded applet grouped-window-list@cinnamon.org in 222 ms
+Gjs-Message: 04:56:19.511: JS LOG: [LookingGlass/info] Loaded applet sound@cinnamon.org in 117 ms
+
+** (csd-power:505): CRITICAL **: 04:56:19.545: abs_to_percentage: assertion 'max > min' failed
+cinnamon-session[417]: WARNING: t+25.64064s: Detected that screensaver has appeared on the bus
+Gjs-Message: 04:56:20.054: JS LOG: [LookingGlass/info] Loaded applet network@cinnamon.org in 543 ms
+Gjs-Message: 04:56:20.454: JS LOG: [LookingGlass/info] Loaded applet menu@cinnamon.org in 400 ms
+Gjs-Message: 04:56:20.454: JS LOG: [LookingGlass/info] AppletManager started in 6744 ms
+Gjs-Message: 04:56:20.459: JS LOG: [LookingGlass/info] Cinnamon took 8156 ms to start
+Gjs-Message: 04:56:20.468: JS LOG: [LookingGlass/info] Hiding systray: network
+Gjs-Message: 04:56:20.473: JS LOG: [LookingGlass/info] Adding systray: pamac-tray (16x16px)
+Gjs-Message: 04:56:20.488: JS LOG: Unknown network device type, is 32
+
+(cinnamon:636): XApp-WARNING **: 04:56:21.179: Switcheroo-control doesn't appear to be running, checking for Ubuntu support...
+Gjs-Message: 04:56:21.186: JS LOG: [LookingGlass/info] GPU offload supported: false
+
+(pamac-tray:680): Gdk-CRITICAL **: 04:56:21.516: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+
+** (pamac-manager:849): WARNING **: 04:56:43.813: flatpak_plugin.vala:311: Error when getting information for file “/var/lib/flatpak/appstream/flathub/x86_64/.timestamp”: No such file or directory
+** Message: 04:56:43.813: flatpak_plugin.vala:330: refreshing flathub appstream data
+
+(pamac-manager:849): Gdk-CRITICAL **: 04:56:43.814: gdk_window_set_cursor: assertion 'GDK_IS_WINDOW (window)' failed
+** Message: 04:56:48.838: updates_checker.vala:71: check updates
+cinnamon-session[417]: WARNING: t+55.64642s: Detected that screensaver has left the bus
+touch: cannot touch '/var/tmp/pamac/dbs/sync/refresh_timestamp': Permission denied
+cinnamon-session[417]: WARNING: t+146.04671s: Detected that screensaver has appeared on the bus
+** Message: 04:58:24.712: updates_checker.vala:71: check updates
+touch: cannot touch '/var/tmp/pamac/dbs/sync/refresh_timestamp': Permission denied
+** Message: 04:58:40.048: updates_checker.vala:101: 109 updates found
+** Message: 04:58:40.048: updates_checker.vala:71: check updates
+touch: cannot touch '/var/tmp/pamac/dbs/sync/refresh_timestamp': Permission denied
+cinnamon-session[417]: WARNING: t+176.06139s: Detected that screensaver has left the bus
+** Message: 04:58:58.585: updates_checker.vala:71: check updates
+touch: cannot touch '/var/tmp/pamac/dbs/sync/refresh_timestamp': Permission denied
