@@ -1,0 +1,107 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+
+    "modules-left": ["tray", "cpu", "temperature","memory", "clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["hyprland/language", "wireplumber", "pulseaudio#mic", "battery", "network", "backlight"],
+    
+    "tray": {
+        "icon-size": 20,
+        "spacing": 10
+    },
+    "cpu": {
+        "format": "{usage}% ",
+        "tooltip": false,
+        "interval": 3
+    },
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C {icon}",
+        "format-icons": ["", "", ""],
+        "tooltip": false,
+        "interval": 3
+    },
+    "memory": {
+        "format": "{}% ",
+        "interval": 3
+    },
+    "clock": {
+        "format": "{:%H:%M} ",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>",
+        "format-alt": "{:%Y-%m-%d}"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "on-click": "activate",
+        "sort-by-number": true,
+        "persistent-workspaces": { 
+            "*": 10
+        }
+    },
+
+    "hyprland/language": {
+        "format-en": "En",
+        "format-fa": "Fa"
+    },
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": ["", "", ""],
+        "tooltip": false
+    },
+    // "pulseaudio#device": {
+    //     "format": "{icon}",
+    //     "format-bluetooth": "{icon}",
+    //     "format-icons": {
+    //         "headphone": "",
+    //         "hands-free": "",
+    //         "headset": "",
+    //         "phone": "",
+    //         "portable": "",
+    //         "car": ""
+    //     },
+    //     "tooltip": false
+    // },
+    "pulseaudio#mic": {
+        "format": "{format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "on-click": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+        "tooltip": false
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 3
+    },
+    "network": {
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "interval": 3
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],
+        "tooltip": false
+    }
+}
+

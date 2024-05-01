@@ -1,0 +1,182 @@
+@import url("colors.css");
+
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: FontAwesome, FiraCode;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#tray, 
+#cpu,
+#temperature,
+#memory,
+#clock {
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#cpu {
+    color: @comment;
+}
+
+#temperature {
+    color: @comment;
+}
+
+#temperature.critical {
+    color: @red;
+}
+
+#memory {
+    color: @comment;
+}
+
+#clock {
+    color: @yellow;
+}
+
+.modules-left {
+    margin: 4px 4px 4px 10px;
+    padding: 0 5px;
+    border-radius: 15px;
+    border: 0.5px solid @background-darker;
+    background-color: @background;
+    box-shadow: 0.5px 0.5px 3px @background-darker;
+}
+
+#workspaces button {
+    color: @green;
+    background-color: transparent;
+    border-radius: 50%;
+}
+
+#workspaces button:hover {
+    box-shadow: 0.15em 0.15em 0.5em rgba(255, 85, 85, 0.6); 
+}
+
+/* #workspaces button.active {
+    color: @green;
+} */
+
+#workspaces button.empty {
+    color: @selection;
+}
+
+#workspaces button.urgent {
+    color: @red;
+}
+
+
+#workspaces {
+    padding: 4px;
+    background-color: transparent;
+}
+
+.modules-center {
+    margin: 4px;
+    border-radius: 15px;
+    border: 0.5px solid @background-darker;
+    background-color: @background;
+    box-shadow: 0.5px 0.5px 3px @background-darker;
+}
+
+#language,
+#wireplumber, 
+#pulseaudio,
+#battery,
+#network,
+#backlight {
+    margin: 0 10px;
+    background-color: transparent;
+}
+
+#language {
+    color: @yellow;
+}
+
+#wireplumber {
+    color: @orange;
+}
+
+#wireplumber.muted {
+    color: @comment;
+}
+
+/* #pulseaudio.device {
+    color: @purple;
+} */
+
+#pulseaudio.mic {
+    color: @red;
+}
+
+#pulseaudio.mic.source-muted {
+    color: @comment;
+}
+
+#battery {
+    color: @foreground;
+}
+
+#battery.charging, #battery.plugged {
+    color: @green;
+}
+
+@keyframes blink {
+    to {
+        color: @foreground;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#network {
+    color: @cyan;
+}
+
+#network.disconnected {
+    color: @red;
+}
+
+#backlight {
+    color: @comment;
+}
+
+.modules-right {
+    margin: 4px 10px 4px 4px;
+    padding: 0 5px;
+    border-radius: 15px;
+    border: 0.5px solid @background-darker;
+    background-color: @background;
+    box-shadow: 0.5px 0.5px 3px @background-darker;
+}
+
+tooltip {
+    border-radius: 15px;
+    border: 0.5px solid rgba(30, 31, 41, 0.75);
+    background-color: rgba(40, 42, 54, 0.75);
+    box-shadow: 0.5px 0.5px 3px @background-darker;
+}
+
+tooltip label {
+    color: @foreground;
+}
