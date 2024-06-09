@@ -1,1 +1,2 @@
 Server = https://raw.githubusercontent.com/parchlinux/pcp/main/x86_64/
+Server = http://mirror2.parchlinux.com/mirror/parchlinux/pcp/x86_64/
